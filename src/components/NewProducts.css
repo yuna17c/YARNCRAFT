@@ -1,38 +1,38 @@
-.cards {
+.new {
     padding: 4rem;
     background: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   
   h1 {
     text-align: center;
   }
   
-  .cards__container {
-    display: flex;
+  .new__container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
     flex-flow: column;
-    align-items: center;
+    align-items: center; 
     max-width: 1120px;
     width: 90%;
     margin: 0 auto;
   }
   
-  .cards__wrapper {
-    position: relative;
-    margin: 50px 0 45px;
-  }
-  
-  .cards__items {
+  .new__items {
     margin-bottom: 24px;
   }
   
-  .cards__item {
+  .new__item {
     display: flex;
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
   }
   
-  .cards__item__link {
+  .new__item__link {
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -44,10 +44,10 @@
     text-decoration: none;
   }
   
-  .cards__item__pic-wrap {
+  .new__item__pic-wrap {
     position: relative;
     width: 100%;
-    padding-top: 67%;
+    padding-top: 100%;
     overflow: hidden;
     background-size:100%;
     transition: all 0.2s linear;
@@ -59,7 +59,7 @@
     animation-duration: 2s;
   }
   
-  .cards__item__pic-wrap::after {
+  .new__item__pic-wrap::after {
     content: attr(data-category);
     position: absolute;
     bottom: 0;
@@ -73,7 +73,7 @@
     box-sizing: border-box;
   }
   
-  .cards__item__img {
+  .new__item__img {
     position: absolute;
     top: 0;
     right: 0;
@@ -88,30 +88,37 @@
     transition: all 0.2s linear;
 
   }
-  #one {
-    background-image: url('../images/flowers.jpg');
+  #n1 {
+    background-image: url('../images/s1.jpg');
   }
-  #two {
-    background-image: url('../images/amigurumi.png');
+  #n2 {
+    background-image: url('../images/s2.jpg');
   }
-  #three {background-image: url('../images/2.jpg');}
-  #four {background-image: url('../images/pumpkin.jpg');}
-  #five {background-image: url('../images/supplies.jpg');}
+  #n3 {background-image: url('../images/sf.jpg');}
+  #n4 {background-image: url('../images/sm1.jpg');}
+  #n5 {background-image: url('../images/sm2.jpg');}
+  #n6 {background-image: url('../images/whale1.jpg');}
 
-  #one:hover,
-  #two:hover,
-  #three:hover,
-  #four:hover,
-  #five:hover
+  #n1:hover,
+  #n2:hover,
+  #n3:hover,
+  #n4:hover,
+  #n5:hover,
+  #n6:hover
    {
     transform: scale(1.1);
   }
   
-  .cards__item__info {
+  .new__item__info {
     padding: 20px 30px 30px;
   }
   
-  .cards__item__text {
+  .new__item__name {
+    color: #252e48;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .new__item__price {
     color: #252e48;
     font-size: 18px;
     line-height: 24px;

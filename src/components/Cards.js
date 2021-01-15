@@ -11,37 +11,41 @@ function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem 
-                            src="./images/img-9.jpg"
+                            src="../../src/images/img-1.jpg"
                             text="Add crochet items to your home decor"
                             label='Home decor'
-                            path='/new'
+                            path='/products'
+                            id="one"
                         />
                         <CardItem 
-                            src="amigurumi.jpg"
+                            src="../images/amigurumi.png"
                             text="Shop amigurumi"
                             label='Amigurumi'
-                            path='/new'
+                            path='/products'
+                            id="two"
                         />
                     </ul>
                     <ul className="cards__items">
                         <CardItem 
-                            src="images/img-9.jpg"
+                            src="../images/img-9.jpg"
                             text="Upgrade your closet with crocheted clothings"
                             label='Clothes'
-                            path='/new'
+                            path='/products'
+                            id="three"
                         />
                         <CardItem 
-                            src="images/img-2.jpg"
-                            text=""
-                            label='Gifts'
-                            path='/new'
+                            src="../images/img-2.jpg"
+                            text="Buy our season specials"
+                            label='Seasonal'
+                            path='/products'
+                            id="four"
                         />
                         <CardItem 
-                            
+                            id="five"
                             text="Buy knitting and yarn supplies"
                             label='Supplies'
-                            path='/new'
-                            src="./images/supplies.jpg"
+                            path='/'     
+                            src="../images/supplies.jpg"
                         />
                     </ul>
                 </div>

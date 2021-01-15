@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button'
 import './HeroSection.css';
@@ -11,9 +12,9 @@ function HeroSection() {
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
                     GET STARTED
                 </Button>
-                <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
+                <Link to ="/new"><Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
                     NEW COLLECTION
-                </Button>
+                </Button></Link> 
             </div>
         </div>
     );
